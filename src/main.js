@@ -20,6 +20,8 @@ const loadMoreBtn = document.querySelector('.load-more');
 form.addEventListener('submit', onSearch);
 loadMoreBtn.addEventListener('click', onLoadMore);
 
+hideLoadMoreButton();
+
 async function onSearch(e) {
   e.preventDefault();
 
