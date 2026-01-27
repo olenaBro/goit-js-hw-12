@@ -19,7 +19,7 @@ body {
 }
 
 .load-more {
-  display: block;
+  display: none;
   margin: 28px auto;
   padding: 12px 32px;
   font-size: 18px;
@@ -38,6 +38,10 @@ body {
 
 .load-more:active {
   background-color: #d274c1;
+}
+
+.load-more:not([hidden]) {
+  display: block; 
 }
 
 .form {
